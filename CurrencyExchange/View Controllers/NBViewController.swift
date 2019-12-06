@@ -75,7 +75,7 @@ extension NBViewController: UITableViewDelegate {
         let rotationTransform = CATransform3DMakeRotation(rotationAngle, 1, 0, 0)
         cell.layer.transform = rotationTransform
         
-        UIView.animate(withDuration: 1, delay: 0.02 * Double(indexPath.row), options: .curveEaseInOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.02 * Double(indexPath.row), options: .curveEaseInOut, animations: {
             cell.layer.transform = CATransform3DIdentity
         })
     }
