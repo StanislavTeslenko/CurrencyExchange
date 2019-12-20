@@ -21,6 +21,13 @@ class DatePickerViewController: UIViewController {
     
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        modalPresentationStyle = .popover
+        popoverPresentationController?.delegate = self
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,6 +50,17 @@ class DatePickerViewController: UIViewController {
         
     }
   
+}
+
+extension DatePickerViewController: UIPopoverPresentationControllerDelegate {
+    
+//    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+//        // Tells iOS that we do NOT want to adapt the presentation style for iPhone
+//        return .none
+//    }
+    
+    
+    
 }
 
 
