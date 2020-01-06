@@ -7,7 +7,7 @@
 Alamofire. 
 Данные доступны за 4 года, начиная с текущей даты.
 
-![Иллюстрация к проекту](https://user-images.githubusercontent.com/49919277/71822227-0760bb00-309d-11ea-80c2-9723975e4903.gif)
+
 
 ## Installation
 
